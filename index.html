@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Modal</title>
+	</head>
+	<body class="bg-gray-400">
+		<div
+			class="
+				backdrop
+				bg-black bg-opacity-50
+				absolute
+				inset-0
+				flex
+				justify-center
+				items-center
+			"
+		>
+			<div class="modal-container bg-gray-200 px-4 py-4 rounded max-w-sm">
+				<div class="modal-header flex justify-between">
+					<div class="modal-title text-xl font-semibold">Confirmations</div>
+					<div class="cursor-pointer">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					</div>
+				</div>
+				<div class="modal-content mt-2">
+					<div class="modal-body">
+						This action will not be undone. Do you really want to confirm?
+					</div>
+					<div class="modal-button mt-3 flex space-x-3 justify-end">
+						<button
+							class="px-4 py-1 bg-red-500 rounded text-white hover:bg-red-800"
+						>
+							Yes
+						</button>
+						<button
+							class="
+								px-4
+								py-1
+								ring-2 ring-gray-400
+								rounded
+								hover:bg-gray-400 hover:text-white
+							"
+						>
+							No
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
